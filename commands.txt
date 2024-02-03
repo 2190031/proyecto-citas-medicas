@@ -1,0 +1,22 @@
+Crear ambiente virtual (hacer en la carpeta del proyecto)
+virtualenv <env-name>            (windows)
+python3 -m venv <env-name>       (linux)
+
+<env-name>\Scripts\activate      (windows)
+source <env-name>/bin/activate   (mac/linux)
+
+<env-name>\Scripts\deactivate    (windows)
+source <env-name>/bin/deactivate (mac/linux)
+
+django-admin startproject <project-name>
+
+python manage.py runserver 
+python manage.py createsuperuser
+python manage.py startapp <app-name>
+python manage.py makemigrations
+python manage.py migrate
+
+
+pip freeze > requirements.txt    // Actualiza los paquetes necesarios/instalados del proyecto
+
+pip install -r requirements.txt  // Instala todos los paquetes en el archivo requirements.txt
